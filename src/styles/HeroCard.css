@@ -1,0 +1,65 @@
+
+body {
+    background-color: black;
+}
+
+.custom-card-body {
+    background-color: #0f345a;
+    /* padding: 1rem; */
+    border-radius: 0.50rem;
+    color: aliceblue;
+    width: 300px; /* Ancho fijo */
+    height: 300px; /* Altura fija */
+}
+
+/*width: 350px; /* Ancho fijo */
+  /*  height: 450px; Altura fija*/
+
+.hero-image {
+    height: 55%; /* Altura fija para la imagen */
+    width: 100%; /* Asegura que ocupe el ancho de la tarjeta */
+    object-fit: cover; /* Ajusta la imagen al contenedor */
+}
+
+.publisher {
+    color: rgb(236, 67, 72);
+}
+
+.text-card {
+    padding: 1rem;
+}
+
+.h1-principal, h5, h1 {
+    color: aliceblue;
+}
+.characters-p {
+    color: aliceblue;
+}
+.superhero {
+    color: aliceblue;
+}
+
+.small-card-body {
+    color: rgb(236, 67, 72);
+    font-family: cursive;
+    
+}
+
+.custom-link {
+    color: aliceblue;
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Negrita */
+}
+
+/* Cambiar el color al pasar el mouse */
+.custom-link:hover {
+    color: #ff5733; 
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+.card-search {
+    width: 50%;
+    height: 70%;
+}
+
+
