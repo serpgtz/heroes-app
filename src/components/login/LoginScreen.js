@@ -1,16 +1,40 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { AuthContext } from '../../auth/AuthContext'
+import { types } from '../../types/types'
 
 export const LoginScreen = () => {
 
+  // const context = useContext(AuthContext)
+
+  // console.log(context)
+ const { dispatch } = useContext(AuthContext)
+
   const navigate = useNavigate()
 
+  const path = localStorage.getItem("lastPath") || "/"
 
   const handleClick = () => {
     // navigate("/") te lleva a la raiz es la equivalencia al history.push("/")
-    navigate("/",{ replace: true })// para remplazar el historial y no se muestre las paginas anteriores
+
+    dispatch({
+      type:types.login,
+      payload:{
+        name:"Sergio"
+      }
+    })
+
     
-  
+    // if(path){
+    //   navigate(`/${path}`,{ replace: true })// para remplazar el historial y no se muestre las paginas 
+    // }
+
+    navigate(path,{ replace: true })// para remplazar el historial y no se muestre las paginas 
+    
+   
+    
+   
+    
   }
 
   return (
